@@ -49,14 +49,14 @@ export default function Home() {
         >
           <source src="/hero-video.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 -z-10 bg-[linear-gradient(135deg,rgba(11,47,107,0.92)_0%,rgba(20,87,184,0.82)_48%,rgba(255,138,0,0.34)_100%)]" />
+        <div className="absolute inset-0 -z-10 bg-[linear-gradient(135deg,rgba(11,47,107,0.82)_0%,rgba(20,87,184,0.72)_48%,rgba(255,138,0,0.18)_100%)] md:bg-[linear-gradient(135deg,rgba(11,47,107,0.92)_0%,rgba(20,87,184,0.82)_48%,rgba(255,138,0,0.34)_100%)]" />
         <div className="absolute left-1/2 top-28 -z-10 h-[32rem] w-[32rem] -translate-x-1/2 rounded-full bg-[rgba(255,138,0,0.14)] blur-3xl" />
         <div className="absolute right-[-7rem] top-20 -z-10 h-[24rem] w-[24rem] rounded-full bg-[rgba(20,87,184,0.22)] blur-3xl" />
 
-        <div className="mx-auto flex min-h-screen max-w-7xl items-center px-6 pb-20 pt-32 lg:px-10">
-          <div className="grid w-full gap-14 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
-            <div className="max-w-3xl text-white">
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[rgba(255,255,255,0.15)] bg-[rgba(255,255,255,0.08)] px-4 py-2 text-xs uppercase tracking-[0.22em] text-white/80">
+        <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-6 pb-20 pt-32 lg:px-10">
+          <div className="grid w-full gap-10 lg:gap-14 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
+            <div className="relative z-20 max-w-3xl text-white">
+              <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[rgba(255,255,255,0.22)] bg-[rgba(255,255,255,0.10)] px-4 py-2 text-xs uppercase tracking-[0.22em] text-white">
                 India-first patent intelligence platform
               </div>
 
@@ -64,13 +64,13 @@ export default function Home() {
                 The operating system for real innovation in India.
               </h1>
 
-              <p className="mt-7 max-w-2xl text-base leading-8 text-white/85 sm:text-lg">
+              <p className="mt-7 max-w-2xl text-base leading-8 text-white sm:text-lg">
                 From first-line idea to protected patent asset, PatentOS helps innovators identify, structure, draft,
                 prosecute, and protect what truly matters. Built for startups, enterprises, universities, inventors,
                 and law firms.
               </p>
 
-              <p className="mt-5 max-w-2xl text-sm leading-7 text-white/68 sm:text-base">
+              <p className="mt-5 max-w-2xl text-sm leading-7 text-white/90 sm:text-base">
                 PatentOS combines invention mining, invention harnessing, drafting intelligence, prosecution readiness,
                 implementation guidance, and law-firm integration into one coordinated innovation workflow.
               </p>
