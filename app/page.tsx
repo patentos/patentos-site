@@ -465,33 +465,238 @@ export default function Home() {
       </section>
 
       <section id="contact" className="relative overflow-hidden bg-[linear-gradient(135deg,#0b2f6b_0%,#1457b8_55%,#ff8a00_140%)]">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.08),transparent_38%)]" />
-        <div className="mx-auto max-w-5xl px-6 py-24 text-center text-white lg:px-10">
-          <p className="text-sm uppercase tracking-[0.2em] text-[#ffd2a1]">Call to action</p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em] sm:text-5xl">
-            Build stronger innovation pipelines with PatentOS
-          </h2>
-          <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-white/85 sm:text-lg">
-            Whether you are a startup, university, enterprise, inventor, or patent law firm, PatentOS helps you move
-            from fragmented invention capture to a smarter, more coordinated patent workflow.
-          </p>
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.08),transparent_38%)]" />
+  <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10">
+    <div className="text-center text-white">
+      <p className="text-xl font-semibold tracking-[0.04em] text-[#ffd2a1] sm:text-2xl">Contact PatentOS</p>
+      <h2 className="mt-4 text-3xl font-semibold tracking-[-0.03em] sm:text-5xl">
+        Let’s build stronger innovation pipelines together
+      </h2>
+      <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-white/85 sm:text-lg">
+        Whether you want to explore a live product demo or discuss a strategic ecosystem partnership, PatentOS is ready to connect.
+      </p>
+      <p className="mt-4 text-base text-white/95">
+        General enquiries:{" "}
+        <a href="mailto:hello@patentos.in" className="underline underline-offset-4 hover:text-[#ffd2a1]">
+          hello@patentos.in
+        </a>
+      </p>
+    </div>
 
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <a
-              href="mailto:hello@patentos.in"
-              className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-[#0b2f6b] transition hover:bg-[#fff4eb]"
-            >
-              Request a Demo
-            </a>
-            <a
-              href="mailto:partners@patentos.in"
-              className="inline-flex items-center justify-center rounded-full border border-[rgba(255,255,255,0.24)] bg-[rgba(255,255,255,0.10)] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[rgba(255,255,255,0.16)]"
-            >
-              Partner With PatentOS
-            </a>
-          </div>
-        </div>
-      </section>
+    <div className="mt-14 grid gap-8 lg:grid-cols-2">
+      <div className="rounded-[2rem] border border-[rgba(255,255,255,0.18)] bg-[rgba(255,255,255,0.10)] p-8 backdrop-blur-md">
+        <h3 className="text-2xl font-semibold text-white">Book a Demo</h3>
+        <p className="mt-3 text-sm leading-7 text-white/80">
+          Share a few details so we can tailor the PatentOS demo to your organization, workflow, and innovation needs. Demo requests will be received on hello@patentos.in.
+        </p>
+
+        <form
+          action="https://formsubmit.co/hello@patentos.in"
+          method="POST"
+          className="mt-8 space-y-4"
+        >
+          <input type="hidden" name="_subject" value="New PatentOS Demo Request" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://www.patentos.in/#contact" />
+
+          <input
+            type="text"
+            name="full_name"
+            placeholder="Full name"
+            required
+            className="w-full rounded-2xl border border-[rgba(255,255,255,0.18)] bg-white/95 px-4 py-3 text-[#122033] outline-none"
+          />
+
+          <input
+            type="email"
+            name="work_email"
+            placeholder="Work email"
+            required
+            className="w-full rounded-2xl border border-[rgba(255,255,255,0.18)] bg-white/95 px-4 py-3 text-[#122033] outline-none"
+          />
+
+          <input
+            type="tel"
+            name="phone_number"
+            placeholder="Phone number"
+            required
+            className="w-full rounded-2xl border border-[rgba(255,255,255,0.18)] bg-white/95 px-4 py-3 text-[#122033] outline-none"
+          />
+
+          <input
+            type="text"
+            name="company_organization"
+            placeholder="Company / organization"
+            required
+            className="w-full rounded-2xl border border-[rgba(255,255,255,0.18)] bg-white/95 px-4 py-3 text-[#122033] outline-none"
+          />
+
+          <input
+            type="text"
+            name="role_designation"
+            placeholder="Role / designation"
+            required
+            className="w-full rounded-2xl border border-[rgba(255,255,255,0.18)] bg-white/95 px-4 py-3 text-[#122033] outline-none"
+          />
+
+          <select
+            name="organization_type"
+            required
+            defaultValue=""
+            className="w-full rounded-2xl border border-[rgba(255,255,255,0.18)] bg-white/95 px-4 py-3 text-[#122033] outline-none"
+          >
+            <option value="" disabled>
+              Organization type
+            </option>
+            <option value="Individual Inventor">Individual inventor</option>
+            <option value="University / College">University / College</option>
+            <option value="Startup">Startup</option>
+            <option value="MSME">MSME</option>
+            <option value="Large Enterprise">Large enterprise</option>
+          </select>
+
+          <select
+            name="ipr_patent_department"
+            required
+            defaultValue=""
+            className="w-full rounded-2xl border border-[rgba(255,255,255,0.18)] bg-white/95 px-4 py-3 text-[#122033] outline-none"
+          >
+            <option value="" disabled>
+              Does your organization have an IPR / Patent department?
+            </option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Not Sure">Not sure</option>
+          </select>
+
+          <textarea
+            name="demo_requirements"
+            placeholder="Tell us what you would like to explore in the demo"
+            rows={5}
+            required
+            className="w-full rounded-2xl border border-[rgba(255,255,255,0.18)] bg-white/95 px-4 py-3 text-[#122033] outline-none"
+          />
+
+          <button
+            type="submit"
+            className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-[#0b2f6b] transition hover:bg-[#fff4eb]"
+          >
+            Submit Demo Request
+          </button>
+        </form>
+      </div>
+
+      <div className="rounded-[2rem] border border-[rgba(255,255,255,0.18)] bg-[rgba(255,255,255,0.10)] p-8 backdrop-blur-md">
+        <h3 className="text-2xl font-semibold text-white">Partner with PatentOS</h3>
+        <p className="mt-3 text-sm leading-7 text-white/80">
+          This partnership channel is intended for IP law firms and IP KPO companies that want to explore integration, drafting support workflows, prosecution collaboration, and ecosystem enablement with PatentOS. Partnership enquiries will be received on partners@patentos.in.
+        </p>
+
+        <form
+          action="https://formsubmit.co/partners@patentos.in"
+          method="POST"
+          className="mt-8 space-y-4"
+        >
+          <input type="hidden" name="_subject" value="New PatentOS Partnership Enquiry" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_next" value="https://www.patentos.in/#contact" />
+
+          <input
+            type="text"
+            name="full_name"
+            placeholder="Full name"
+            required
+            className="w-full rounded-2xl border border-[rgba(255,255,255,0.18)] bg-white/95 px-4 py-3 text-[#122033] outline-none"
+          />
+
+          <input
+            type="email"
+            name="work_email"
+            placeholder="Work email"
+            required
+            className="w-full rounded-2xl border border-[rgba(255,255,255,0.18)] bg-white/95 px-4 py-3 text-[#122033] outline-none"
+          />
+
+          <input
+            type="tel"
+            name="phone_number"
+            placeholder="Phone number"
+            required
+            className="w-full rounded-2xl border border-[rgba(255,255,255,0.18)] bg-white/95 px-4 py-3 text-[#122033] outline-none"
+          />
+
+          <input
+            type="text"
+            name="organization_name"
+            placeholder="Firm / company name"
+            required
+            className="w-full rounded-2xl border border-[rgba(255,255,255,0.18)] bg-white/95 px-4 py-3 text-[#122033] outline-none"
+          />
+
+          <input
+            type="text"
+            name="role_designation"
+            placeholder="Role / designation"
+            required
+            className="w-full rounded-2xl border border-[rgba(255,255,255,0.18)] bg-white/95 px-4 py-3 text-[#122033] outline-none"
+          />
+
+          <select
+            name="partner_type"
+            required
+            defaultValue=""
+            className="w-full rounded-2xl border border-[rgba(255,255,255,0.18)] bg-white/95 px-4 py-3 text-[#122033] outline-none"
+          >
+            <option value="" disabled>
+              Type of partner
+            </option>
+            <option value="IP Law Firm">IP law firm</option>
+            <option value="IP KPO Company">IP KPO company</option>
+          </select>
+
+          <input
+            type="text"
+            name="office_locations"
+            placeholder="Office location(s)"
+            className="w-full rounded-2xl border border-[rgba(255,255,255,0.18)] bg-white/95 px-4 py-3 text-[#122033] outline-none"
+          />
+
+          <input
+            type="text"
+            name="practice_focus"
+            placeholder="Primary IP focus areas (for example patents, drafting, prosecution, analytics, paralegal support)"
+            required
+            className="w-full rounded-2xl border border-[rgba(255,255,255,0.18)] bg-white/95 px-4 py-3 text-[#122033] outline-none"
+          />
+
+          <input
+            type="text"
+            name="team_size"
+            placeholder="Approximate team size handling patent / IP work"
+            className="w-full rounded-2xl border border-[rgba(255,255,255,0.18)] bg-white/95 px-4 py-3 text-[#122033] outline-none"
+          />
+
+          <textarea
+            name="partnership_interest"
+            placeholder="Describe the partnership opportunity and how your firm or company could work with PatentOS"
+            rows={5}
+            required
+            className="w-full rounded-2xl border border-[rgba(255,255,255,0.18)] bg-white/95 px-4 py-3 text-[#122033] outline-none"
+          />
+
+          <button
+            type="submit"
+            className="inline-flex items-center justify-center rounded-full border border-[rgba(255,255,255,0.24)] bg-[rgba(255,255,255,0.10)] px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-[rgba(255,255,255,0.16)]"
+          >
+            Submit Partnership Enquiry
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
 
       <footer className="border-t border-[rgba(20,87,184,0.08)] bg-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 lg:flex-row lg:items-center lg:justify-between lg:px-10">
