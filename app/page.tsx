@@ -21,11 +21,11 @@ export default function Home() {
   <a href="#why-patentos" className="transition hover:text-[#1457b8]">
     Why PatentOS
   </a>
-  <a href="#vision" className="transition hover:text-[#1457b8]">
-    Vision
-  </a>
-  <a href="#solutions" className="transition hover:text-[#1457b8]">
+   <a href="#solutions" className="transition hover:text-[#1457b8]">
     Solutions
+  </a>
+   <a href="#vision" className="transition hover:text-[#1457b8]">
+    Vision
   </a>
   <a href="#founder" className="transition hover:text-[#1457b8]">
     About
