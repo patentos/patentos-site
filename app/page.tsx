@@ -375,7 +375,143 @@ export default function Home() {
           </div>
         </div>
       </section>
+<section id="Vision" className="border-y border-[rgba(20,87,184,0.08)] bg-[#f7f9fc]">
+  <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10">
+    <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+      <div>
+        <p className="mb-3 text-xl font-semibold tracking-[0.04em] text-[#ff8a00] sm:text-2xl">
+          Vision
+        </p>
+        <h2 className="max-w-2xl text-3xl font-semibold tracking-[-0.03em] text-[#122033] sm:text-4xl">
+          Closing India&apos;s patent gap with the world&apos;s leading innovation economies.
+        </h2>
+      </div>
 
+      <div className="rounded-[2rem] border border-[rgba(20,87,184,0.10)] bg-white p-8 shadow-[0_10px_40px_rgba(20,87,184,0.05)]">
+        <p className="text-base leading-8 text-slate-600">
+          PatentOS exists to help India close its patent gap with the world&apos;s leading innovation
+          economies by leveraging AI to make high-quality patent creation faster, smarter, and more
+          accessible. We believe India does not lack ideas. It lacks scalable invention-to-patent
+          infrastructure.
+        </p>
+        <p className="mt-6 text-base leading-8 text-slate-600">
+          Our vision is to help transform India from a nation of under-captured innovation into a
+          global patent powerhouse by enabling more inventors, startups, universities, MSMEs, and
+          enterprises to convert real technical breakthroughs into defensible patent assets.
+        </p>
+        <p className="mt-6 text-base leading-8 text-slate-600">
+          In 2023, applicants based in China filed 1,642,507 patent applications worldwide, the
+          United States filed 518,364, and India filed 64,480. PatentOS is being built to help
+          narrow that distance with better invention discovery, stronger drafting, and more scalable
+          prosecution readiness. 
+        </p>
+      </div>
+    </div>
+
+    <div className="mt-16 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+      <div className="rounded-[2rem] border border-[rgba(20,87,184,0.10)] bg-white p-8 shadow-[0_10px_40px_rgba(20,87,184,0.05)]">
+        <div className="flex items-end justify-between gap-4">
+          <div>
+            <p className="text-lg font-semibold text-[#122033]">
+              Global patent applications by origin, 2023
+            </p>
+            <p className="mt-2 text-sm leading-7 text-slate-500">
+              A simple snapshot of where India stands today relative to China and the United States.
+            </p>
+          </div>
+          <p className="text-xs tracking-[0.08em] text-slate-400">Source: WIPO Statistics Database</p>
+        </div>
+
+        <div className="mt-10">
+          {[
+            { label: "China", value: 1642507, color: "bg-[#1457b8]" },
+            { label: "United States", value: 518364, color: "bg-[#2f6fd1]" },
+            { label: "India", value: 64480, color: "bg-[#ff8a00]" },
+          ].map((item) => {
+            const max = 1642507;
+            const width = (item.value / max) * 100;
+            return (
+              <div key={item.label} className="mb-6 last:mb-0">
+                <div className="mb-2 flex items-center justify-between gap-4">
+                  <span className="text-sm font-medium text-[#122033]">{item.label}</span>
+                  <span className="text-sm font-semibold text-slate-600">
+                    {item.value.toLocaleString("en-IN")}
+                  </span>
+                </div>
+                <div className="h-4 w-full rounded-full bg-[#e9eef7]">
+                  <div
+                    className={`h-4 rounded-full ${item.color}`}
+                    style={{ width: `${width}%` }}
+                  />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="rounded-[2rem] border border-[rgba(255,138,0,0.16)] bg-[linear-gradient(135deg,#fff7ef_0%,#ffffff_100%)] p-8 shadow-[0_10px_40px_rgba(255,138,0,0.08)]">
+        <p className="text-lg font-semibold text-[#122033]">
+          India–China patent gap
+        </p>
+        <p className="mt-2 text-sm leading-7 text-slate-500">
+          Based on 2023 worldwide patent applications by origin.
+        </p>
+
+        <div className="mt-8 rounded-[1.5rem] border border-[rgba(20,87,184,0.10)] bg-white p-6">
+          <p className="text-sm text-slate-500">China</p>
+          <p className="mt-1 text-3xl font-semibold text-[#1457b8]">
+            {1642507 .toLocaleString("en-IN")}
+          </p>
+
+          <div className="my-6 h-px bg-[rgba(20,87,184,0.10)]" />
+
+          <p className="text-sm text-slate-500">India</p>
+          <p className="mt-1 text-3xl font-semibold text-[#ff8a00]">
+            {64480 .toLocaleString("en-IN")}
+          </p>
+
+          <div className="my-6 h-px bg-[rgba(20,87,184,0.10)]" />
+
+          <p className="text-sm text-slate-500">Gap</p>
+          <p className="mt-1 text-4xl font-semibold text-[#122033]">
+            {(1642507 - 64480).toLocaleString("en-IN")}
+          </p>
+          <p className="mt-3 text-sm leading-7 text-slate-600">
+            PatentOS is being built to help India reduce this distance by leveraging AI to improve
+            invention capture, drafting quality, and patent readiness at scale.
+          </p>
+        </div>
+
+        <div className="mt-8">
+          <p className="text-sm font-medium text-slate-500">Relative scale</p>
+          <div className="mt-3 h-5 w-full rounded-full bg-[#e9eef7]">
+            <div
+              className="h-5 rounded-full bg-[#1457b8]"
+              style={{ width: "100%" }}
+            />
+          </div>
+          <div className="mt-3 h-5 w-full rounded-full bg-[#fff1e2]">
+            <div
+              className="h-5 rounded-full bg-[#ff8a00]"
+              style={{ width: `${(64480 / 1642507) * 100}%` }}
+            />
+          </div>
+          <div className="mt-3 flex items-center justify-between text-sm text-slate-500">
+            <span>China = 100%</span>
+            <span>India ≈ {((64480 / 1642507) * 100).toFixed(1)}%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p className="mt-8 text-sm leading-7 text-slate-500">
+      PatentOS vision uses WIPO 2023 worldwide patent application figures by origin: China 1,642,507,
+      United States 518,364, and India 64,480. India was also one of the fastest-growing major origins
+      in 2023. 
+    </p>
+  </div>
+</section>
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10">
           <div className="grid gap-8 lg:grid-cols-2">
