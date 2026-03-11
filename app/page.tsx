@@ -38,6 +38,12 @@ export default function Home() {
 >
   Request Demo
 </a>
+<a
+  href="https://dashboard.patentos.in/login"
+  className="rounded-full border border-[rgba(20,87,184,0.22)] bg-white/75 px-5 py-2.5 text-sm font-medium text-[#1457b8] transition hover:bg-[rgba(20,87,184,0.08)]"
+>
+  Login
+</a>
         </div>
       </header>
 
