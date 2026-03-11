@@ -378,7 +378,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-<section id="Vision" className="border-y border-[rgba(20,87,184,0.08)] bg-[#f7f9fc]">
+<section id="vision" className="border-y border-[rgba(20,87,184,0.08)] bg-[#f7f9fc]">
   <div className="mx-auto max-w-7xl px-6 py-24 lg:px-10">
     <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
       <div>
@@ -405,7 +405,7 @@ export default function Home() {
         <p className="mt-6 text-base leading-8 text-slate-600">
           In 2023, applicants based in China filed 1,642,507 patent applications worldwide, the
           United States filed 518,364, and India filed 64,480. PatentOS is being built to help
-          narrow that distance with better invention discovery, stronger drafting, and more scalable
+          narrow that gap with better invention discovery, stronger drafting, and more scalable
           prosecution readiness. 
         </p>
       </div>
